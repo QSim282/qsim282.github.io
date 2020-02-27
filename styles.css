@@ -1,0 +1,23 @@
+body {
+    background-color: #6A2C3E !important;
+}
+
+.freebirdFormviewerViewHeaderThemeStripe {
+    background-color: #E87722 !important;
+}
+
+#questionOne {
+    display: none;
+}
+
+#questionTwo {
+    display: none;
+}
+
+#questionThree {
+    display: none;
+}
+
+#submitButton {
+    background-color: #E87722 !important;
+}
