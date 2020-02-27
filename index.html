@@ -1,81 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-    <title>Test Custom HTML Form</title>
-    <link rel="stylesheet" href="">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsKM9A_1OxdkSh7j7DDsH5qqF1ZJj_G9B5lnsadDIvmAa3aw/formResponse" method="POST">
-        <input type="text" name="entry.526533321" placeholder="Name">
-
-        <input type="hidden" name="entry.1238163387" id="eventNameField" value="CS Information Session"> 
-        <input type="hidden" name="entry.830348347_hour" id="startTimeHour" value="13">
-        <input type="hidden" name="entry.830348347_minute" id="startTimeMinute" value="30">
-        <input type="hidden" name="entry.1222106444_hour" id="endTimeHour" value="14">
-        <input type="hidden" name="entry.1222106444_minute" id="endTimeMinute" value="00">
-
-        <input type="hidden" name="entry.344993576_year" placeholder="Year" id="yearField">
-        <input type="hidden" name="entry.344993576_month" placeholder="Month" id="monthField">
-        <input type="hidden" name="entry.344993576_day" placeholder="Day" id="dayField">
-
-        <button type="submit" onClick="copyValues();">Submit</button>
-
-        <div class="container">
-            <div class="row">
-               <!-- <h2>Bootstrap Datepicker</h2> -->
-            </div>
-            <div class="row">
-                <div class='col-sm-6'>
-                    <form>
-                        <div class="form-group">
-                            <div class='input-group date' id='datepicker'>
-                                <input type='text' class="form-control" id="datePicker" />
-                                <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-        <script >
-            $(function () {
-                $('#datepicker').datepicker({
-                    format: "dd/mm/yyyy",
-                    autoclose: true,
-                    todayHighlight: true,
-                    showOtherMonths: true,
-                    selectOtherMonths: true,
-                    autoclose: true,
-                    changeMonth: true,
-                    changeYear: true,
-                    orientation: "button"
-                });
-            });
+    <head>
+        <script src="http://googleformrestyler.apixml.net/GoogleFormStyler.js" 
+        form="https://docs.google.com/forms/d/e/1FAIpQLSfsKM9A_1OxdkSh7j7DDsH5qqF1ZJj_G9B5lnsadDIvmAa3aw/viewform?embedded=true">
         </script>
-    <script>
-        function copyValues() {
+        <style>
+            body {
+    background-color: #6A2C3E !important;
+}
 
+.freebirdFormviewerViewHeaderThemeStripe {
+    background-color: #E87722 !important;
+}
 
-            var yearElement = document.getElementById('yearField');
-            var monthElement = document.getElementById('monthField');
-            var dayElement = document.getElementById('dayField');
-            var dateElement = document.getElementById('datePicker');
-            
-            var dateString = dateElement.value;
-            var info = dateString.split("/");
-            
-            dayElement.value = info[0];
-            monthElement.value = info[1];
-            yearElement.value = info[2];
-        }
-    </script>
-    </form>
-</body>
+#questionOne {
+    display: none;
+}
+
+#questionTwo {
+    display: none;
+}
+
+#questionThree {
+    display: none;
+}
+
+#submitButton {
+    background-color: #E87722 !important;
+}
+        </style>
+    </head>
+    <body>
+
+    </body>
 </html>
